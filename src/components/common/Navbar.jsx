@@ -4,35 +4,35 @@ import { Icon } from "@iconify/react";
 const Navbar = ({ isOpen, toggle }) => {
   return (
     <div
-      className={`absolute z-10 transform left-0 bg-slate-800 transition-transform ${
+      className={`absolute z-10 transform left-0 bg-slate-950 transition-transform ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } w-1/2 h-screen pt-14 pb-24 overflow-auto`}
     >
-      <nav className="flex flex-col items-center justify-center p-4">
+      <nav className="flex flex-col items-center justify-center p-4 text-xl font-light text-gray-50">
         <Link
           to="/about"
-          className="text-slate-50 py-6 text-xl font-light hover:text-slate-300"
+          className="py-6 hover:text-slate-300"
           onClick={toggle}
         >
           Über
         </Link>
         <Link
           to="/demos"
-          className="text-slate-50 py-6 text-xl font-light hover:text-slate-300"
+          className="py-6 hover:text-slate-300"
           onClick={toggle}
         >
           Demos
         </Link>
         <Link
           to="/services"
-          className="text-slate-50 py-6 text-xl font-light hover:text-slate-300"
+          className="hover:text-slate-300 py-6 "
           onClick={toggle}
         >
           Services
         </Link>
         <Link
           to="/contact"
-          className="text-slate-50 py-6 text-xl font-light hover:text-slate-300"
+          className="py-6 hover:text-slate-300 "
           onClick={toggle}
         >
           Kontakt
@@ -61,7 +61,7 @@ const Navbar = ({ isOpen, toggle }) => {
                 icon="arcticons:fiverr"
                 width="30"
                 height="30"
-                className="text-slate-50"
+                className="hover:text-slate-300"
               />
             </a>
           </li>
@@ -75,7 +75,7 @@ const Navbar = ({ isOpen, toggle }) => {
                 icon="arcticons:freelancer-upwork"
                 width="30"
                 height="30"
-                className="text-slate-50"
+                className="hover:text-slate-300"
               />
             </a>
           </li>

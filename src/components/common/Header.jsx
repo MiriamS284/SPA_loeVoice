@@ -9,7 +9,7 @@ const Header = () => {
   const toggleNavbar = () => setIsNavbarOpen(!isNavbarOpen);
 
   return (
-    <header className="bg-slate-800 text-slate-50">
+    <header className="bg-slate-950 text-slate-50">
       <div className="md:flex justify-between items-center hidden space-x-4">
         <Link to="/" className="flex items-center p-4 text-xl font-bold">
           <MicrophoneIcon className="mr-2 w-8 h-8" />
@@ -42,7 +42,7 @@ const Header = () => {
           </Link>
         </nav>
       </div>
-      <div className="md:hidden flex justify-between items-center bg-slate-800 text-slate-50 p-4">
+      <div className="md:hidden flex justify-between items-center bg-slate-950 text-gray-50 p-4">
         <Link to="/" className="flex items-center p-4 text-lg font-bold">
           <MicrophoneIcon className="mr-2 w-6 h-6" /> <span>LoeVoice</span>
         </Link>
@@ -51,17 +51,17 @@ const Header = () => {
           className="flex flex-col justify-center items-center w-10 h-10 relative"
         >
           <div
-            className={`absolute w-6 h-0.5 bg-white transform transition-all ease-in-out duration-300 ${
+            className={`absolute w-6 h-0.5 bg-gray-50 transform transition-all ease-in-out duration-300 ${
               isNavbarOpen ? "rotate-45" : "-translate-y-1.5"
             }`}
           ></div>
           <div
-            className={`absolute w-6 h-0.5 bg-white transform transition-opacity duration-300 ${
+            className={`absolute w-6 h-0.5 bg-gray-50 transform transition-opacity duration-300 ${
               isNavbarOpen ? "opacity-0" : "opacity-100"
             }`}
           ></div>
           <div
-            className={`absolute w-6 h-0.5 bg-white transform transition-all ease-in-out duration-300 ${
+            className={`absolute w-6 h-0.5 bg-gray-50 transform transition-all ease-in-out duration-300 ${
               isNavbarOpen ? "-rotate-45" : "translate-y-1.5"
             }`}
           ></div>

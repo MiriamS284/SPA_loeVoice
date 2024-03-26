@@ -3,7 +3,7 @@ import { MicrophoneIcon } from "../../utils/icons";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-700 text-slate-200 p-4">
+    <footer className="bg-slate-900 text-slate-50 p-4">
       <div className="max-w-screen-xl mx-auto flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm">
         <div className="hidden sm:block flex-1"></div>
 
@@ -20,13 +20,13 @@ const Footer = () => {
         <div className="flex flex-1 justify-end space-x-4 md:text-base">
           <Link
             to="/privacypolicy"
-            className="text-slate-300 hover:text-slate-50"
+            className="text-slate-100 hover:text-slate-300"
           >
             Privacy Policy
           </Link>
           <Link
             to="/imprint"
-            className="text-slate-300 hover:text-slate-50 md:text-base"
+            className="text-slate-100 hover:text-slate-300 md:text-base"
           >
             Imprint
           </Link>
